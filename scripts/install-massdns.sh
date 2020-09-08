@@ -2,6 +2,10 @@
 GREEN="\033[1;32m"
 ENDCOLOR="\e[0m"
 
+# SHINHWA - don't think I need this right now, but saving it for
+# the future when I'm smarter.
+exit 0
+
 # Check if MassDNS is installed
 if [ ! -d "/opt/massdns" ]
 then
