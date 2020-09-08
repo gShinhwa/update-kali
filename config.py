@@ -8,11 +8,11 @@ directories_to_remove = ['Documents', 'Music', 'Pictures', 'Public', 'Templates'
 # These kali packages will be installed
 packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'gobuster', 'amass',
                        'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 'python3-venv',
-                       'apt-transport-https', 'curl', 'filezilla', 'meld',
-                       'net-tools', 'tmux', 'steghide', 'bash-completion']
+                       'apt-transport-https', 'curl', 'filezilla', 'meld', 'python-pip',
+                       'net-tools', 'tmux', 'steghide', 'bash-completion', 'bloodhound']
 
 # These kali packages will be removed
-packages_to_remove = ['zsh', 'zsh-syntax-highlighting', 'zsh-autosuggestions']
+packages_to_remove = []
 
 # These python packages will be installed globally
 pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker']
@@ -26,22 +26,29 @@ gem_packages = ['wpscan']
 # export GOROOT=/usr/lib/go
 # export GOPATH=$HOME/go
 # export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+# SHINHWA: I've commented out things here that are probably super useful, but
+# I don't know how to use them. Later when I do, I will renable them.
 golang_modules_to_install = [
+                            'github.com/OJ/gobuster',
                             'github.com/tomnomnom/assetfinder',
                             'github.com/projectdiscovery/subfinder/cmd/subfinder',
-                            'github.com/lc/gau',
-                            'github.com/theblackturtle/wildcheck',
+#                            'github.com/lc/gau',
+#                            'github.com/theblackturtle/wildcheck',
                             'github.com/tomnomnom/httprobe',
-                            'github.com/hakluke/hakrawler',
-                            'github.com/tomnomnom/qsreplace',
-                            'github.com/hahwul/dalfox',
-                            'github.com/ffuf/ffuf',
-                            'github.com/dwisiswant0/hinject'
+#                            'github.com/hakluke/hakrawler',
+#                            'github.com/tomnomnom/qsreplace',
+#                            'github.com/hahwul/dalfox',
+#                            'github.com/ffuf/ffuf',
+#                            'github.com/dwisiswant0/hinject'
                             ]
 
 # These git repositories will be synced to the 'external repo' directory
 external_tools_directory = '/opt'
 ext_repositories_to_sync = [
+                            'https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git',
+                            'https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git',
+                            'https://github.com/lgandx/Responder',
+                            'https://github.com/fox-it/mitm6'
                             'https://github.com/danielmiessler/SecLists',
                             'https://github.com/swisskyrepo/PayloadsAllTheThings',
                             'https://github.com/payloadbox/xss-payload-list',
@@ -52,8 +59,6 @@ ext_repositories_to_sync = [
 # These git repositories will be synced to the 'personal repo' directory. I use my home directory.
 personal_repo_directory = os.getenv("HOME")
 personal_repositories_to_sync = [
-                                'git@github.com:rafaelh/dotfiles',
-                                'git@github.com:rafaelh/.private'
                                 ]
 
 # Next, take a look in the /scripts directory. Every script ending in .sh or .py will be run,
