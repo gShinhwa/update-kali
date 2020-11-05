@@ -19,4 +19,3 @@ sudo git clone -b impacket_0_9_19 https://github.com/SecureAuthCorp/impacket.git
 cd impacket
 sudo pip install .
 cd ~
-fi

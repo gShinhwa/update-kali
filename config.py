@@ -58,7 +58,8 @@ ext_repositories_to_sync = [
                             'https://github.com/phra/PEzor',
                             'https://github.com/rkhal101/nmapAutomator',
                             'https://github.com/rebootuser/LinEnum',
-                            'https://github.com/sleventyeleven/linuxprivchecker'
+                            'https://github.com/sleventyeleven/linuxprivchecker',
+                            'https://github.com/mzet-/linux-exploit-suggester'
                             ]
 
 # These git repositories will be synced to the 'personal repo' directory. I use my home directory.
