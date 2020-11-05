@@ -45,8 +45,8 @@ golang_modules_to_install = [
 # These git repositories will be synced to the 'external repo' directory
 external_tools_directory = '/opt'
 ext_repositories_to_sync = [
-                            'https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git',
-                            'https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git',
+                            'https://github.com/AonCyberLabs/Windows-Exploit-Suggester',
+                            'https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite',
                             'https://github.com/lgandx/Responder',
                             'https://github.com/fox-it/mitm6'
                             'https://github.com/danielmiessler/SecLists',
@@ -55,7 +55,9 @@ ext_repositories_to_sync = [
                             'https://github.com/Cillian-Collins/dirscraper',
                             'https://github.com/maurosoria/dirsearch',
                             'https://github.com/phra/PEzor',
-                            'https://github.com/rkhal101/nmapAutomator'
+                            'https://github.com/rkhal101/nmapAutomator',
+                            'https://github.com/rebootuser/LinEnum',
+                            'https://github.com/sleventyeleven/linuxprivchecker'
                             ]
 
 # These git repositories will be synced to the 'personal repo' directory. I use my home directory.
