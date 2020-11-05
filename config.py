@@ -8,14 +8,15 @@ directories_to_remove = ['Documents', 'Music', 'Pictures', 'Public', 'Templates'
 # These kali packages will be installed
 packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'gobuster', 'amass',
                        'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 'python3-venv',
-                       'apt-transport-https', 'curl', 'filezilla', 'meld', 'python-pip',
-                       'net-tools', 'tmux', 'steghide', 'bash-completion', 'bloodhound']
+                       'apt-transport-https', 'curl', 'filezilla', 'meld', 'ncat', 'net-tools',
+                       'tmux', 'steghide', 'bash-completion', 'ieee-data', 'python3-netaddr',
+                       'ruby-full', 'powercat', 'twofi', 'cewl', 'nbtscan', 'tree']
 
 # These kali packages will be removed
 packages_to_remove = []
 
 # These python packages will be installed globally
-pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker']
+pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker', 'sslyze']
 
 # These gem packages will be installed globally
 gem_packages = ['wpscan']
@@ -69,3 +70,4 @@ personal_repositories_to_sync = [
 # provided it's # executable. For example, the current scripts install VS Code, Google Chrome and
 # Typora. Any script that goes in this directory should be written so it can run multiple times
 # without causing problems.
+

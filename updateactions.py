@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 import os
-import apt
 import sys
+from datetime import datetime
 
 def print_message(color, message):
     """ Prints a formatted message to the console """
-    if   color == "green":  print("\033[1;32m[+] \033[0;37m" + message + "\033[0;37m")
-    elif color == "blue":   print("\033[1;34m[i] \033[0;37m" + message + "\033[0;37m")
-    elif color == "yellow": print("\033[0;33m[<] \033[0;37m" + message + "\033[0;37m", end="")
-    elif color == "red":    print("\033[1;31m[-] \033[0;37m" + message + "\033[0;37m")
-    elif color == "error":  print("\033[1;31m[!] \033[0;37m" + message + "\033[0;37m")
-    else:                   print("\033[0;41mInvalid Format\033[0;37m " + message + "\033[0;37m")
+    if   color == "green":  print("\033[1;32m[+] \033[0;37m" + datetime.now().strftime("%H:%M:%S") + " - " + message)
+    elif color == "blue":   print("\033[1;34m[i] \033[0;37m" + datetime.now().strftime("%H:%M:%S") + " - " + message)
+    elif color == "yellow": print("\033[0;33m[<] \033[0;37m" + datetime.now().strftime("%H:%M:%S") + " - " + message, end="")
+    elif color == "red":    print("\033[1;31m[-] \033[0;37m" + datetime.now().strftime("%H:%M:%S") + " - " + message)
+    elif color == "error":  print("\033[1;31m[!] \033[0;37m" + datetime.now().strftime("%H:%M:%S") + " - " + message)
+    else:                   print("\033[0;41mInvalid Format\033[0;37m " + datetime.now().strftime("%H:%M:%S") + " " + message)
 
 def elevate_privileges():
     """ Gets sudo privileges and returns the current date """
-    status = os.system("sudo date")
+    status = os.system("sudo date; echo")
     return status
 
 def take_ownership(directory):
@@ -31,15 +31,14 @@ def update_packages():
         os.system(cmdstring)
 
 def install_package(package, apt_cache):
-    """ Installs a package from apt or lets you know if its present """
+    """ Installs a package using apt """
     if not apt_cache[package].is_installed:
         print_message("green", "Installing " + package)
         cmdstring = "sudo apt install -y " + package
-        if package == "pip": cmdstring += " && sudo pip3 install --upgrade pip"
         os.system(cmdstring)
 
 def remove_package(package, apt_cache):
-    """ Installs a package from apt or lets you know if its present """
+    """ Removes a package using apt """
     if apt_cache[package].is_installed:
         print_message("red", "Removing " + package)
         cmdstring = "sudo apt remove -y " + package
@@ -113,4 +112,3 @@ def run_scripts():
                 os.system(cmdstring)
     else:
         print_message("error", "'scripts' directory is missing")
-
