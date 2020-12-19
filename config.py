@@ -6,11 +6,18 @@ import os
 directories_to_remove = ['Documents', 'Music', 'Pictures', 'Public', 'Templates', 'Videos']
 
 # These kali packages will be installed
-packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'gobuster', 'amass',
-                       'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 'python3-venv',
-                       'apt-transport-https', 'curl', 'filezilla', 'meld', 'ncat', 'net-tools',
-                       'tmux', 'steghide', 'bash-completion', 'ieee-data', 'python3-netaddr',
-                       'ruby-full', 'powercat', 'twofi', 'cewl', 'nbtscan', 'tree']
+packages_to_install = [
+    'most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'gobuster', 'amass',
+    'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 'python3-venv',
+    'apt-transport-https', 'curl', 'filezilla', 'meld', 'ncat', 'net-tools',
+    'tmux', 'steghide', 'bash-completion', 'ieee-data', 'python3-netaddr',
+    'ruby-full', 'powercat', 'twofi', 'cewl', 'nbtscan', 'tree', 'dirbuster',
+    'seclists', 'enum4linux', 'nikto', 'nmap', 'onesixtyone',
+    'burpsuite', 'oscanner', 'smbclient', 'smbmap', 'smtp-user-enum',
+    'snmp', 'sslscan', 'sipvicious', 'tnscmd10g', 'whatweb', 'wkhtmltopdf',
+
+	'git', 'nextcloud-desktop', 'keepassxc'
+]
 
 # These kali packages will be removed
 packages_to_remove = []
@@ -49,17 +56,17 @@ ext_repositories_to_sync = [
                             'https://github.com/AonCyberLabs/Windows-Exploit-Suggester',
                             'https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite',
                             'https://github.com/lgandx/Responder',
-                            'https://github.com/fox-it/mitm6'
-                            'https://github.com/danielmiessler/SecLists',
+                            'https://github.com/fox-it/mitm6',
+# you can apt install this                  'https://github.com/danielmiessler/SecLists',
                             'https://github.com/swisskyrepo/PayloadsAllTheThings',
                             'https://github.com/payloadbox/xss-payload-list',
                             'https://github.com/Cillian-Collins/dirscraper',
                             'https://github.com/maurosoria/dirsearch',
                             'https://github.com/phra/PEzor',
-                            'https://github.com/rkhal101/nmapAutomator',
                             'https://github.com/rebootuser/LinEnum',
                             'https://github.com/sleventyeleven/linuxprivchecker',
-                            'https://github.com/mzet-/linux-exploit-suggester'
+                            'https://github.com/mzet-/linux-exploit-suggester',
+                            'https://github.com/Tib3rius/AutoRecon.git'
                             ]
 
 # These git repositories will be synced to the 'personal repo' directory. I use my home directory.
