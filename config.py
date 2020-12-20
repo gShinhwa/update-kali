@@ -15,6 +15,7 @@ packages_to_install = [
     'seclists', 'enum4linux', 'nikto', 'nmap', 'onesixtyone',
     'burpsuite', 'oscanner', 'smbclient', 'smbmap', 'smtp-user-enum',
     'snmp', 'sslscan', 'sipvicious', 'tnscmd10g', 'whatweb', 'wkhtmltopdf',
+    'exploitdb', 'ssh',
 
 	'git', 'nextcloud-desktop', 'keepassxc'
 ]
@@ -34,7 +35,7 @@ gem_packages = ['wpscan']
 # export GOROOT=/usr/lib/go
 # export GOPATH=$HOME/go
 # export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-# SHINHWA: I've commented out things here that are probably super useful, but
+# KA: I've commented out things here that are probably super useful, but
 # I don't know how to use them. Later when I do, I will renable them.
 golang_modules_to_install = [
                             'github.com/OJ/gobuster',
