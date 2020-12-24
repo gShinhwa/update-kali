@@ -15,7 +15,7 @@ packages_to_install = [
     'seclists', 'enum4linux', 'nikto', 'nmap', 'onesixtyone',
     'burpsuite', 'oscanner', 'smbclient', 'smbmap', 'smtp-user-enum',
     'snmp', 'sslscan', 'sipvicious', 'tnscmd10g', 'whatweb', 'wkhtmltopdf',
-    'exploitdb', 'ssh',
+    'exploitdb', 'ssh', 'wordlists',
 
 	'git', 'nextcloud-desktop', 'keepassxc'
 ]
