@@ -119,6 +119,7 @@ golang_modules_to_install = [
 external_tools_directory = '/opt'
 ext_repositories_to_sync = [
                             'https://github.com/AonCyberLabs/Windows-Exploit-Suggester',
+                            'https://github.com/bitsadmin/wesng'
                             'https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite',
                             'https://github.com/lgandx/Responder',
                             'https://github.com/fox-it/mitm6',
