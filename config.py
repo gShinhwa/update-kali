@@ -16,6 +16,7 @@ packages_to_install = [
         'curl',
         'dirb',
         'dirbuster',
+        'docker.io',
         'enum4linux',
         'exif',
         'exploitdb',
