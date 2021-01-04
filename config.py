@@ -41,7 +41,7 @@ packages_to_install = [
         'libssl-dev',
         'llvm',
         'meld',
-        'metasploit-framework'
+        'metasploit-framework',
         'most',
         'nasm',
         'nbtscan',
