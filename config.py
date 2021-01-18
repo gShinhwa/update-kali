@@ -89,7 +89,10 @@ packages_to_install = [
 packages_to_remove = []
 
 # These python packages will be installed globally
-pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker', 'sslyze']
+# sslyze seems to be broken with Python 3.1.
+# https://github.com/nabla-c0d3/sslyze/issues/464
+#pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker', 'sslyze']
+pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker']
 
 # These gem packages will be installed globally
 gem_packages = ['wpscan']
@@ -120,7 +123,7 @@ golang_modules_to_install = [
 external_tools_directory = '/opt'
 ext_repositories_to_sync = [
                             'https://github.com/AonCyberLabs/Windows-Exploit-Suggester',
-                            'https://github.com/bitsadmin/wesng'
+                            'https://github.com/bitsadmin/wesng',
                             'https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite',
                             'https://github.com/lgandx/Responder',
                             'https://github.com/fox-it/mitm6',
