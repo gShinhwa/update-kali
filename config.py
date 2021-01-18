@@ -130,7 +130,6 @@ ext_repositories_to_sync = [
                             'https://github.com/Cillian-Collins/dirscraper',
                             'https://github.com/maurosoria/dirsearch',
                             'https://github.com/phra/PEzor',
-                            'https://github.com/EgeBalci/sgn',
                             'https://github.com/rebootuser/LinEnum',
                             'https://github.com/sleventyeleven/linuxprivchecker',
                             'https://github.com/mzet-/linux-exploit-suggester',
