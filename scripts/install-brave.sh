@@ -3,12 +3,12 @@ GREEN="\033[1;32m"
 ENDCOLOR="\e[0m"
 
 # === Exit without proceeding if run in WSL ===
-if [ -f /mnt/c/Windows/System32/wsl.exe ]; then
+if [ -f "/mnt/c/Windows/System32/wsl.exe" ]; then
     exit 0
 fi
 
 # Check if Brave is installed
-if [ -f "/etc/apt/sources.list.d/brave-browser-release.list"]; then
+if [ -f "/etc/apt/sources.list.d/brave-browser-release.list" ]; then
     exit 0
 fi
 
