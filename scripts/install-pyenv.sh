@@ -31,4 +31,5 @@ then
     echo -ne $GREEN"[+] "$ENDCOLOR; echo "Installing pyenv"
     curl https://pyenv.run | bash
     pyenv install 2.7.18
+    pyenv install 3.9.2
 fi
