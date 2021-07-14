@@ -21,7 +21,6 @@ if 'Kali' in release:
             'apt-transport-https',
             'bash-completion',
             'build-essential',
-            'burpsuite',
             'cewl',
             'curl',
             'davtest',
@@ -106,10 +105,10 @@ if 'Kali' in release:
     # sslyze seems to be broken with Python 3.1.
     # https://github.com/nabla-c0d3/sslyze/issues/464
     #pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker', 'sslyze']
-    pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker']
+    pip_packages = ['pipenv', 'pylint', 'dnsgen', 'stegcracker', 'jsbeautifier']
 
     # These gem packages will be installed globally
-    gem_packages = ['wpscan']
+    gem_packages = ['wpscan','fpm']
 
     # These go tools will be installed globally. You will need to have the following settings in your
     # .bashrc already:
