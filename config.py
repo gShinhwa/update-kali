@@ -148,7 +148,8 @@ if 'Kali' in release:
                                 'https://github.com/rebootuser/LinEnum',
                                 'https://github.com/sleventyeleven/linuxprivchecker',
                                 'https://github.com/mzet-/linux-exploit-suggester',
-                                'https://github.com/Tib3rius/AutoRecon.git'
+                                'https://github.com/Tib3rius/AutoRecon.git',
+                                'https://github.com/darkoperator/dnsrecon'
                                 ]
 
     # These git repositories will be synced to the 'personal repo' directory. I use my home directory.
